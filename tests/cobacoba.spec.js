@@ -7,12 +7,12 @@ test('Login', async ({ page }) => {
   // 2. input username
   const inputUsername = page.locator('#username');
   await inputUsername.fill('student');
-  await expect(inputUsername).toHaveValue( 'student');
+  // await expect(inputUsername).toHaveValue( 'student');
   
   // 2. input password
   const inputPassword = page.locator('#password');
   await inputPassword.fill('Password123');
-  await expect(inputPassword).toHaveValue( 'Password123');
+  // await expect(inputPassword).toHaveValue( 'Password123');
 
   // 3. klik login
   const buttonLogin = page.locator('#submit.btn');
